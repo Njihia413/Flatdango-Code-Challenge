@@ -17,7 +17,7 @@ function fetchFirstMovie (id) {
 
         document.getElementById("showtime").innerHTML = movie.showtime;
 
-        document.getElementById("ticket-num").innerHTML = movie.tickets_sold;
+        document.getElementById("ticket-num").innerHTML = movie.capacity - movie.tickets_sold;
     })
 }
 
