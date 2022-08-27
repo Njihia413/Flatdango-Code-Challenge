@@ -8,6 +8,16 @@ function fetchFirstMovie (id) {
     .then(response => response.json())
     .then(movie => {
         document.getElementById("poster").src = movie.poster;
+
+        document.getElementById("title").innerHTML = movie.title;
+
+        document.getElementById("runtime").innerHTML = movie.runtime;
+
+        document.getElementById("film-info").innerHTML = movie.description;
+
+        document.getElementById("showtime").innerHTML = movie.showtime;
+
+        document.getElementById("ticket-num").innerHTML = movie.tickets_sold;
     })
 }
 
